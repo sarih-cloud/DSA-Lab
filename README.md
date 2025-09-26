@@ -1,11 +1,9 @@
-# DSA-Lab2
+# DSA-Lab
 
-This repository contains the implementation and solutions for **Lab 2** of the Data Structures and Algorithms (DSA) course at **NUST**.
+This repository contains the implementation and solutions for **Labs** of my Data Structures and Algorithms (DSA) course at **NUST**.
 
 ## Contents
-- Source code files for Lab 2 tasks
-- Example inputs and outputs
-- Documentation and explanations
+- Source code files for Lab tasks
 
 ## How to Run
 1. Clone this repository:
@@ -14,7 +12,10 @@ This repository contains the implementation and solutions for **Lab 2** of the D
 
    ```
 
-   Contributions are welcome! You can:
-Add helpful comments in code files.
-Suggest more efficient algorithms.
-Fix spelling/grammar in code or documentation.
+### Contributions are welcome! 
+
+You can:
+
+- Add helpful comments in code files.
+- Suggest more efficient algorithms.
+- Fix spelling/grammar in code or documentation.
