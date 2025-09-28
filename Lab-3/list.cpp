@@ -165,6 +165,18 @@ class LinkedList
         cout << "NULL" << endl;     // Show the end of the list
     }
 
+    int numberOfNodes()
+    {
+        int count = 0;
+        Node* temp = this->head;
+        while (temp != NULL) 
+        {
+            count++;
+            temp = temp->next;      // Move to the next node
+        }
+        return count;
+    }
+
     void destroyList() 
     {
         Node* temp;
@@ -176,19 +188,83 @@ class LinkedList
         }
         cout << "[SUCCESS] list destroyed" << endl;
     }
+
+    void insertAtPosition3(int value) 
+    {
+        Node* newNode = new Node();
+        newNode->data = value;
+
+        Node* temp = this->head;
+        for (int i = 1; i < 2 && temp != NULL; i++)
+        {           // Traverse to next Node till at location just behind position 3
+            temp = temp->next;
+        }
+        newNode->next = temp->next;     // Link the new node to the next node
+        temp->next = newNode;           // Link previous node to the new one
+    }
 };
 
+// Always subject to change: DO NOT make any contributions in the main function
 int main()      // Test driver for list class
 {
     // Create a linked list
-    LinkedList* list = new LinkedList();
+    LinkedList* list1 = new LinkedList();
 
     // Insert Nodes at head
-    list->insertAtBeggining(7);
-    list->insertAtBeggining(4);
-    list->insertAtBeggining(12);
-    list->insertAtBeggining(8);
+    list1->insertAtBeggining(7);
+    list1->insertAtBeggining(4);
+    list1->insertAtBeggining(12);
+    list1->insertAtBeggining(8);
+    cout << endl;
 
-    // Verify that the values were added
-    list->displayList();
+    bool keepRunning = true;
+    while (keepRunning) 
+    {
+        int userChoice;
+        cout << "____ Linked-List Operations Menu ____" << endl;
+        cout << "[1] Insert Nodes at the Head" << endl;
+        cout << "[2] Insert Node at 3rd position" << endl;
+        cout << "[3] Display list" << endl;
+        cout << "[4] Delete from a position" << endl;
+        cout << "[5] Count number of Nodes in the list" << endl;
+        cout << "[6] Exit" << endl;
+        cout << "\nChoice: ";
+
+        cin >> userChoice;
+
+        switch (userChoice) 
+        {
+            case 1:
+                cout << "Enter value to insert: ";
+                cin >> userChoice;
+                list1->insertAtBeggining(userChoice);
+                cout << "Value " << userChoice << " inserted at head." << endl;
+                break;
+            case 2:
+                cout << "Enter value of Node to insert at 3rd position: ";
+                cin >> userChoice;
+                list1->insertAtPosition3(userChoice);
+                cout << "Value " << userChoice << " inserted at position 3." << endl;
+                break;
+            case 3:
+                list1->displayList();
+                break;
+            case 4:
+                cout << "Enter position of node to be deleted: ";
+                cin >> userChoice;
+                list1->deleteFromPosition(userChoice);
+                cout << "Position " << userChoice << " deleted from list" << endl;
+                break;
+            case 5:
+                cout << "The number of nodes in the list is: " << list1->numberOfNodes() << endl;
+                break;
+            case 6:
+                cout << "exiting..." << endl;
+                keepRunning = false;
+                break;
+            default:
+                cout << "Invalid Input." << endl;
+        }
+        cout << endl;
+    }
 }
